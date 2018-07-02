@@ -1,6 +1,6 @@
 {
   "name": "wtfcanyoueat",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Vegan food finder",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/hayden-blummont/wtfcanyoueat.git"
   },
   "author": "Hayden",
-  "license": "My damn licence",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",

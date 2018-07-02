@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>wtfcanyoueat</title>
-    <link rel="stylesheet" href="/main.css">
-  </head>
-  <body>
-    <ul>
-    {{#each establishments}}
-      <li>{{name}} ({{type}}) {{website}} {{address}}</li>
-    {{/each}}
+<head>
+  <title>wtfcanyoueat</title>
+  <link rel="stylesheet" href="/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+</head>
+<body>
+  <div class="columns">
+    <div class="column">Auto</div>
+    <div class="column is-four-fifths">
+      <header class="is-size-1 has-text-centered">WTFcanyoueat??</header>
+      <ul>
+        {{#each establishments}}
+        <li>{{name}} </br> ({{type}}) </br> <a href={{website}}>{{name}} Website</a> </br> {{address}}</li>
+      </br>
+      {{/each}}
     </ul>
-  </body>
+  </div>
+  <div class="column">Auto</div>
+</div>
+</body>
 </html>
