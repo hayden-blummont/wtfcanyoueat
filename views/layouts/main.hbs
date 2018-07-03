@@ -11,17 +11,23 @@
 </head>
 <body>
   <div class="columns">
-    <div class="column">Auto</div>
+    <div class="column"></div>
     <div class="column is-four-fifths">
-      <header class="is-size-1 has-text-centered">WTFcanyoueat??</header>
-      <ul>
-        {{#each establishments}}
-        <li>{{name}} </br> ({{type}}) </br> <a href={{website}}>{{name}} Website</a> </br> {{address}}</li>
-      </br>
-      {{/each}}
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+        </div>
+      </nav>
+      <header class="is-size-1 has-text-centered">WTFcanIeat??</header>
+    </br>
+    <ul>
+      {{{body}}}
     </ul>
   </div>
-  <div class="column">Auto</div>
+  <div class="column"></div>
 </div>
+
 </body>
 </html>

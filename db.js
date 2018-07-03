@@ -7,6 +7,12 @@ function getEstablishments (testConn) {
   return conn('establishments').select()
 }
 
+function getEstablishment (id, testConn) {
+  const conn = testConn || connection
+  return conn('establishments').where({id: id}).select()
+}
+
 module.exports = {
-  getEstablishments: getEstablishments
+  getEstablishments: getEstablishments,
+  getEstablishment: getEstablishment
 }
