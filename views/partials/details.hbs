@@ -1,5 +1,12 @@
-    <ul>
-    {{#each establishment}}
-      <li>{{name}} {{type}} </li>
-    {{/each}}
-    </ul>
+<ul>
+{{#each establishment}}
+  <li>
+    {{name}} </br>
+    ({{type}}) </br>
+    <a href={{website}}>{{name}} Website</a> </br>
+    {{address}} </br>
+    <a href="tel:{{phoneNumber}}">{{phoneNumber}}</a> </br> </br>
+    <p style="font-weight:bold;"> Recommeded: {{recommended}}</p> </br>
+  </li>
+{{/each}}
+</ul>

@@ -6,6 +6,7 @@ exports.up = (knex, Promise) => {
     table.string('website')
     table.string('type')
     table.string('phoneNumber')
+    table.string('recommended')
   })
 }
 

@@ -6,3 +6,7 @@ header {
   font-family: 'Fjalla One', sans-serif;
   font-size: 2.5em;
 }
+
+.column .img {
+  margin-top: 50px;
+}

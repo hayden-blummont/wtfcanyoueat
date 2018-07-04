@@ -8,7 +8,8 @@ exports.seed = function (knex, Promise) {
         address:'167 Cuba St, Te Aro, Wellington 6011',
         website:'https://www.facebook.com/Aunty-Mena-Vegetarian-Cafe-133064006760606/',
         type:'Restaurant and Cafe',
-        phoneNumber: '043828288'
+        phoneNumber: '043828288',
+        recommended: 'Chicken Laksa, Chow Mee, Chicken Drumsticks!!!'
       },
       {
         id: 1,
@@ -16,7 +17,8 @@ exports.seed = function (knex, Promise) {
         address:'134 Willis St, Te Aro, Wellington 6011',
         website:'https://www.sweetreleasecakesandtreats.co.nz/',
         type: 'Bakery / Cafe',
-        phoneNumber:'0211320700'
+        phoneNumber:'0211320700',
+        recommended: 'Thickshakes, Cheese Scones, Pies!!!'
       },
       {
         id: 2,
