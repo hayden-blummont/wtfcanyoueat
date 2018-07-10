@@ -9,7 +9,9 @@ exports.seed = function (knex, Promise) {
         website:'https://www.facebook.com/Aunty-Mena-Vegetarian-Cafe-133064006760606/',
         type:'Restaurant and Cafe',
         phoneNumber: '043828288',
-        recommended: 'Chicken Laksa, Chow Mee, Chicken Drumsticks!!!'
+        recommended: 'Chicken Laksa, Chow Mee, Chicken Drumsticks!!!',
+        lat: '-41.29405',
+        lng: '174.7755'
       },
       {
         id: 1,
@@ -18,7 +20,9 @@ exports.seed = function (knex, Promise) {
         website:'https://www.sweetreleasecakesandtreats.co.nz/',
         type: 'Bakery / Cafe',
         phoneNumber:'0211320700',
-        recommended: 'Thickshakes, Cheese Scones, Pies!!!'
+        recommended: 'Thickshakes, Cheese Scones, Pies!!!',
+        lat: '-41.289331',
+        lng: '174.774345'
       },
       {
         id: 2,
@@ -26,7 +30,9 @@ exports.seed = function (knex, Promise) {
         address:"120 Riddiford St, Newtown, Wellington 6021",
         website:'http://www.pranahcafe.co.nz/',
         type:'Cafe',
-        phoneNumber:'043898100'
+        phoneNumber:'043898100',
+        lat: '-41.312087',
+        lng: '174.779173'
       }
     ])
   })

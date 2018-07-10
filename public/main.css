@@ -10,3 +10,7 @@ header {
 .column .img {
   margin-top: 50px;
 }
+
+#mapid {
+  height: 30vw;
+}

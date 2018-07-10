@@ -7,6 +7,8 @@ exports.up = (knex, Promise) => {
     table.string('type')
     table.string('phoneNumber')
     table.string('recommended')
+    table.float('lat')
+    table.float('lng')
   })
 }
 

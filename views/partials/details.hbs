@@ -1,12 +1,29 @@
 <ul>
-{{#each establishment}}
+  {{#each establishment}}
   <li>
-    {{name}} </br>
-    ({{type}}) </br>
-    <a href={{website}}>{{name}} Website</a> </br>
-    {{address}} </br>
-    <a href="tel:{{phoneNumber}}">{{phoneNumber}}</a> </br> </br>
-    <p style="font-weight:bold;"> Recommeded: {{recommended}}</p> </br>
+    <div class="columns">
+      <div class="column is-6">
+        {{name}} </br>
+        ({{type}}) </br>
+        <a href={{website}}>{{name}} Website</a> </br>
+        {{address}} </br>
+        <a href="tel:{{phoneNumber}}">{{phoneNumber}}</a> </br> </br>
+        <p style="font-weight:bold;"> Recommeded: {{recommended}}</p> </br>
+      </div>
+      <div class="column is-6">
+        <div id="mapid"></div>
+      </div>
+    </div>
   </li>
-{{/each}}
+  <script>
+  var mymap = L.map('mapid').setView([{{lat}}, {{lng}}], 20);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiaGF5ZGVuYjIzIiwiYSI6ImNqamZkbHdpcTR2Y3MzcW80djE5cjM0OGMifQ.1kWB-Vu5bn2R1dPa95dHKg'
+  }).addTo(mymap);
+  var marker = L.marker([{{lat}}, {{lng}}]).addTo(mymap);
+  </script>
+  {{/each}}
 </ul>
