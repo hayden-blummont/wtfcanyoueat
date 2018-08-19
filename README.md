@@ -1,1 +1,3 @@
-Dis is useless... Like wisdom teefs.
+This repo is for a personal project I started at EDA (Enspiral Dev Academy) using the first tech that we learned. As the course progressed, we learned React and Redux which I plan to implement in this project as part of my practice and refinement over the coming couple of months. 
+
+While I work on this, I've also been working on a couple of online JavaScript courses to really solidify all this new knowledge. The first course I aim to complete is the 'Javascript Algorithms And Data Structures Certification (300 hours)' course on freecodecamp.org before I move onto some more React/Redux specific courses.
